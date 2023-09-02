@@ -1,0 +1,83 @@
+/* Start Variables */
+:root {
+  --header-color: #4f4f4f;
+  --main-color: #333;
+  --icons-bg-color: #f2994a;
+  --section-padding: 80px;
+  --header-ff: "Playfair Display", serif;
+}
+/* End Variables */
+/* Start Global Rules */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+}
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* Small  */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+/* Medium  */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+/* Larg  */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+/* End Global Rules */
+/* Start Header */
+header {
+  padding-top: calc(var(--section-padding) / 2);
+}
+header .container {
+  display: flex;
+  flex-flow: column wrap;
+}
+header .container .text {
+  padding-bottom: calc(var(--section-padding) / 3);
+}
+header .container .text h1 {
+  font-family: var(--header-ff);
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin: 0;
+  padding-bottom: 10px;
+}
+header .container .text p {
+  color: var(--header-color);
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: italic;
+  font-weight: 500;
+  line-height: normal;
+}
+header .container .image {
+  max-width: 969px;
+}
+header .container .image img {
+  width: 100%;
+}
+/* End Header */

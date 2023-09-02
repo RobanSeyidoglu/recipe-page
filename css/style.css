@@ -124,7 +124,19 @@ header .container .image img {
   box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
   padding: calc(var(--section-padding) / 3) 0;
   order: 2;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transform: scale(1);
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  cursor: pointer;
 }
+
 .ingredients .container .time .buttom {
   display: flex;
   flex-flow: column;
@@ -188,6 +200,20 @@ header .container .image img {
   font-style: italic;
   font-weight: 400;
   line-height: normal;
+}
+.ingredients .container .time:hover {
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  background-color: #f2994a;
+}
+.ingredients .container .time:hover .top .box .icon span,
+.ingredients .container .time:hover .top .box .text p,
+.ingredients .container .time:hover .buttom .box .text p,
+.ingredients .container .time:hover .buttom .box .icon span {
+  color: white;
 }
 .ingredients .container .ing ol {
   display: flex;
@@ -266,11 +292,37 @@ a {
 .ingredients .container .ing a:hover {
   color: var(--header-color);
 }
-/* End Ingredients Section */
+/* Strat Small Screens */
+@media (max-width: 768px) {
+  .ingredients .container {
+    flex-flow: column;
+    justify-content: center;
+  }
+  .ingredients .container .time {
+    order: 1;
+    box-shadow: none;
+    width: 100%;
+    height: fit-content;
+  }
 
+  .ingredients .container .ing {
+    order: 2;
+  }
+  .ingredients .container .time .buttom {
+    flex-flow: row;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .ingredients .container .time .top {
+    align-self: flex-start;
+  }
+  header .container .text h1 {
+    font-size: 40px;
+  }
+} /* End Small Screens */
+/* End Ingredients Section */
 /* Start Footer */
 footer {
-  padding: calc(var(--padding) * 2.5) 0 15px 0;
   text-align: center;
   font-family: Montserrat;
   font-size: 1.2rem;
@@ -279,7 +331,7 @@ footer {
   letter-spacing: 0em;
   text-align: center;
   color: #a9a9a9;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
 }
 footer a {
   text-decoration: none;

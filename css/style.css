@@ -42,6 +42,7 @@ ol {
   .container {
     width: 970px;
   }
+
 }
 /* Larg  */
 @media (min-width: 1200px) {
@@ -135,6 +136,7 @@ header .container .image img {
   -ms-transform: scale(1);
   -o-transform: scale(1);
   cursor: pointer;
+  flex-shrink: 0;
 }
 
 .ingredients .container .time .buttom {
@@ -181,9 +183,10 @@ header .container .image img {
 }
 .ingredients .container .ing {
   display: flex;
-  flex-flow: column;
+  flex-flow: column wrap;
+
   gap: calc(var(--section-padding) / 3);
-  width: 75%;
+  max-width: 75%;
 }
 .ingredients .container .ing h2 {
   color: var(--main-color);
@@ -219,10 +222,11 @@ header .container .image img {
   display: flex;
   flex-flow: column;
   gap: calc(var(--section-padding) / 5);
-  width: 110%;
+  width: 100;
 }
 .ingredients .container .ing ol li {
   display: flex;
+ 
   align-items: center;
   color: var(--main-color);
   font-family: "Montserrat", sans-serif;
@@ -292,6 +296,8 @@ a {
 .ingredients .container .ing a:hover {
   color: var(--header-color);
 }
+
+
 /* Strat Small Screens */
 @media (max-width: 768px) {
   .ingredients .container {
@@ -343,6 +349,9 @@ a {
   }
   .ingredients .container .ing ol li {
     font-size: 14px;
+  }
+  .ingredients .container .ing ol{
+    width: 110%;
   }
   .first-a {
     font-size: 12px;

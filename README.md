@@ -8,15 +8,15 @@
 
 <div align="center">
   <h3>
-    <a href="https://robanseyidoglu.github.io/interior-consultant/">
+    <a href="https://robanseyidoglu.github.io/recipe-page/">
       Demo
     </a>
     <span> | </span>
-    <a href="https://devchallenges.io/solutions/YNAd0IzKeYlsiksCwSHN">
+    <a href="https://devchallenges.io/solutions/HEFP4xuhQI8CLsKRq0sP">
       Solution
     </a>
     <span> | </span>
-    <a href="https://devchallenges.io/challenges/Jymh2b2FyebRTUljkNcb">
+    <a href="https://devchallenges.io/challenges/OEKdUZ6xs0h99C38XVht">
       Challenge
     </a>
   </h3>
@@ -49,7 +49,7 @@
 
 <!-- List the features of your application or follow the template. Don't share the figma file here :) -->
 
-This application/site was created as a submission to a [DevChallenges](https://devchallenges.io/challenges) challenge. The [challenge](https://devchallenges.io/challenges/Jymh2b2FyebRTUljkNcb) was to build an application to complete the given user stories.
+This application/site was created as a submission to a [DevChallenges](https://devchallenges.io/challenges) challenge. The [challenge](https://devchallenges.io/challenges/OEKdUZ6xs0h99C38XVht) was to build an application to complete the given user stories.
 
 ## Acknowledgements
 

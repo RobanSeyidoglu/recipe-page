@@ -32,7 +32,7 @@ ol {
   margin-right: auto;
 }
 /* Small  */
-@media (max-width: 768px) {
+@media (min-width: 768px) {
   .container {
     width: 750px;
   }
@@ -219,6 +219,7 @@ header .container .image img {
   display: flex;
   flex-flow: column;
   gap: calc(var(--section-padding) / 5);
+  width: 110%;
 }
 .ingredients .container .ing ol li {
   display: flex;
@@ -239,9 +240,7 @@ header .container .image img {
   height: 21px;
   margin-right: calc(var(--section-padding) / 5);
 }
-/* .ingredients .container .ing ol li p {
-  display: inline-block;
-} */
+
 .ingredients .container .ing ol:last-of-type {
   gap: calc(var(--section-padding) / 2.3);
   margin-left: calc(var(--section-padding) - 20px);
@@ -289,6 +288,7 @@ a {
   padding: calc(var(--section-padding) / 1.5) 0;
   width: fit-content;
 }
+
 .ingredients .container .ing a:hover {
   color: var(--header-color);
 }
@@ -317,7 +317,50 @@ a {
     align-self: flex-start;
   }
   header .container .text h1 {
-    font-size: 40px;
+    font-size: 24px;
+  }
+  header .container .text {
+    width: 100%;
+    margin: 0;
+  }
+  .ingredients .container .time .box .text p:last-child {
+    font-size: 10px;
+  }
+  .ingredients .container .time .box .text p:first-child {
+    font-size: 8px;
+  }
+  .ingredients .container .time .top .box .icon span {
+    font-size: 24px;
+  }
+  .ingredients .container .time .buttom .box .icon span {
+    font-size: 24px;
+  }
+  .ingredients .container .ing h2 {
+    font-size: 18px;
+  }
+  .ingredients .container .ing h3 {
+    font-size: 1rem;
+  }
+  .ingredients .container .ing ol li {
+    font-size: 14px;
+  }
+  .first-a {
+    font-size: 12px;
+  }
+  .first-a span {
+    display: block;
+  }
+  footer p {
+    font-size: 14px;
+  }
+  .ingredients .container .time:hover {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    background-color: #f2994a;
+    padding: 20px;
   }
 } /* End Small Screens */
 /* End Ingredients Section */

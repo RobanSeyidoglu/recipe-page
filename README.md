@@ -36,7 +36,7 @@
 
 ## Overview
 
-![screenshot](https://github.com/RobanSeyidoglu/interior-consultant/assets/123882030/94f5e2ef-0181-4a3d-9dd2-29e12f937e4e)
+![screenshot](https://github.com/RobanSeyidoglu/recipe-page/assets/123882030/1beb963b-8779-4fe9-8600-50d8accddfc8)
 
 ### Built With
 
